@@ -627,7 +627,7 @@ function swapHeadAndTail(arr) {
     return arr.reverse();
   }
   const center = Math.floor(arr.length / 2);
-  let newArr = [];
+  let newArr;
   if (arr.length % 2 === 0) {
     newArr = [...arr.slice(center), ...arr.slice(0, center)];
   } else {
